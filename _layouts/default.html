@@ -6,6 +6,15 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Is this shkolopolis?</title>
+    <style>
+        @media screen and (min-width: 0px) and (max-width: 400px) {
+            div#links { display: block; }  /* show it on small screens */
+        }
+
+        @media screen and (min-width: 401px) and (max-width: 1024px) {
+            div#links { display: none; }   /* hide it elsewhere */
+        }
+    </style>
 </head>
 <body style="margin:0; padding: 0">
     <div style="width: 100%; background: #3a303a; margin-bottom: 10px; box-shadow: 0 1px 3px 0 rgba(0,0,0,0.5)">
@@ -15,7 +24,7 @@
                     <h2 style="display: inline">SHKOLOPOLIS</h2>
                 </a>
             </div>
-            <div media="screen and (min-width: 900px)" style="float: right; display: inline">
+            <div id="links" style="float: right; display: inline">
                 <a href="https://vnuchaev.blog/" style="margin-right: 10px; text-decoration: none">
                     <h2 style="display: inline; color: #deeeed">Blog</h2>
                 </a>
