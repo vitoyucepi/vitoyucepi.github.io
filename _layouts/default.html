@@ -7,12 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Is this shkolopolis?</title>
     <style>
-        @media screen and (min-width: 0px) and (max-width: 400px) {
-            div#links { display: block; }  /* show it on small screens */
+        @media screen and (max-width: 640px) {
+            div#links { display: none; }
+            div#menu { display: inline; }
         }
-
-        @media screen and (min-width: 401px) and (max-width: 1024px) {
-            div#links { display: none; }   /* hide it elsewhere */
+        @media screen and (min-width: 640px) {
+            div#links { display: inline; }
+            div#menu { display: none; }
         }
     </style>
 </head>
@@ -24,7 +25,7 @@
                     <h2 style="display: inline">SHKOLOPOLIS</h2>
                 </a>
             </div>
-            <div id="links" style="float: right; display: inline">
+            <div id="links" style="float: right">
                 <a href="https://vnuchaev.blog/" style="margin-right: 10px; text-decoration: none">
                     <h2 style="display: inline; color: #deeeed">Blog</h2>
                 </a>
@@ -35,6 +36,11 @@
                     <h2 style="display: inline; color: #deeeed">Chat</h2>
                 </a>
             </div>
+            <div id="menu" style="float: right">
+                <h2 style="display: inline; color: #deeeed">Blog</h2>
+                <h2 style="display: inline; color: #deeeed">Twitter</h2>
+                <h2 style="display: inline; color: #deeeed">Chat</h2>
+            </div>
         </div>
     </div>
     <div style="width: 100%">
@@ -42,3 +48,4 @@
     </div>
 </body>
 </html>
+
